@@ -2,11 +2,16 @@
 
 import sys
 
-if __name__ == "__main__":
-    argv = sys.argv[1:]
-    num_args = len(argv)
+def print_arguments(argv):
+    num_arguments = len(argv)
+    print(f"Number of argument(s): {num_arguments}")
 
-    print(f"Number of argument(s): {num_args} {'argument' if num_args == 1 else 'arguments'}{':' if num_args > 0 else '.'}")
+    if num_arguments == 0:
+        print(".")
+    else:
+        print(":")
+        for i, arg in enumerate(argv, start=1):
+            print(f"{i}: {arg}")
 
-    for i, arg in enumerate(argv, start=1):
-        print(f"{i}: {arg}")
+print_arguments(sys.argv[1:])
+
