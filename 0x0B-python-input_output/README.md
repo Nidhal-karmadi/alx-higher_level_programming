@@ -1,5 +1,4 @@
-
-n - Input/Output
+# Python - Input/Output
 
 In this project, I practiced file handling in Python. I used the builtin `with`, `open`, and `read` functions with the `json` module to read and write files and serialize and deserialize objects with JSON.
 
@@ -82,3 +81,4 @@ Prototypes for functions written in this project:
     * Status code of each read line, printed in ascending order:  `<status code>: <number>`
   * Input format: `<IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
   <status code> <file size>`
+
